@@ -74,36 +74,20 @@ layout: default
                 <h1>Health Care Solutions</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa fa-heartbeat text-primary fs-4"></i>
-                        </div>
-                        <h4 class="mb-3">Physiotherapy</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                    </div>
-                </div>
+				
+				{% for specialty in site.data.specialties %}
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-light rounded h-100 p-5">
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Naturopathy</h4>
-                        <p class="mb-4">Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being, encompassing therapies like yoga, diet, herbal medicine, and stress management. </p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        <h4 class="mb-3">{{ specialty.name }}</h4>
+                        <p class="mb-4">{{ specialty.description }}</p>
+                        <a class="btn" href="{{ specialty.link }}"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light rounded h-100 p-5">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                            <i class="fa fa-brain text-primary fs-4"></i>
-                        </div>
-                        <h4 class="mb-3">Psychology</h4>
-                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                    </div>
-                </div>
+				{% endfor %}
+				
             </div>
         </div>
     </div>
@@ -187,15 +171,16 @@ layout: default
             </div>
             <div class="row g-4">
 				
-				{% for therapist in site.data.therapists %}
+			{% for person in site.data.team %}
+				{% if person.roles contains "therapist" %}
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/{{ therapist.photo }}" alt="">
+                            <img class="img-fluid" src="img/{{ person.photo }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>{{ therapist.name }}</h5>
-                            <p class="text-primary">{{ therapist.specialty }}</p>
+                            <h5>{{ person.name }}</h5>
+                            <p class="text-primary">{{ person.specialty }}</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -204,7 +189,8 @@ layout: default
                         </div>
                     </div>
                 </div>
-				{% endfor %}
+				{% endif %}
+			{% endfor %}
 				
             </div>
         </div>

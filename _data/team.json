@@ -2,30 +2,42 @@
   {
     "name": "Dr. Aswathi N",
     "specialty": "Naturopathy",
+	"roles": ["therapist"],
 	"cert": "",
 	"photo": "team-aswathi.jpg"
   },
   {
     "name": "Nelson Joy",
     "specialty": "Physiotherapy",
+	"roles": ["therapist"],
 	"cert": "",
 	"photo": "team-nelson.jpg"
   },
   {
     "name": "Tanooja",
     "specialty": "Massage Therapy",
+	"roles": ["therapist"],
 	"cert": "",
 	"photo": "team-tanooja.jpg"
   },
   {
     "name": "Bindu K A",
     "specialty": "Psychology",
+	"roles": ["therapist"],
 	"cert": "",
 	"photo": "team-bindu.jpg"
   },
   {
+    "name": "Betsy Prasad",
+    "specialty": "Pharmacy",
+	"roles": ["director"],
+	"cert": "",
+	"photo": "team-betsy.jpg"
+  },
+  {
     "name": "Prasad Joseph",
     "specialty": "Psychology",
+	"roles": ["therapist", "director"],
 	"cert": "",
 	"photo": "team-prasad.jpg"
   }

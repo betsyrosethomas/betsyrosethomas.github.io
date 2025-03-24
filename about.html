@@ -123,15 +123,16 @@ title: About us
             </div>
             <div class="row g-4">
 
-				{% for therapist in site.data.therapists %}
+			{% for person in site.data.team %}
+				{% if person.roles contains "therapist" %}
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/{{ therapist.photo }}" alt="">
+                            <img class="img-fluid" src="img/{{ person.photo }}" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>{{ therapist.name }}</h5>
-                            <p class="text-primary">{{ therapist.specialty }}</p>
+                            <h5>{{ person.name }}</h5>
+                            <p class="text-primary">{{ person.specialty }}</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -140,7 +141,8 @@ title: About us
                         </div>
                     </div>
                 </div>
-				{% endfor %}
+				{% endif %}
+			{% endfor %}
 
             </div>
         </div>
