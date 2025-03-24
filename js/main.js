@@ -60,6 +60,7 @@
     $(".header-carousel").owlCarousel({
         autoplay: true,
         animateOut: 'fadeOutLeft',
+		smartSpeed: 1500,
         items: 1,
         dots: true,
         loop: true,
