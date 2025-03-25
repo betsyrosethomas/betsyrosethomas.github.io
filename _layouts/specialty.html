@@ -30,7 +30,7 @@ layout: default
                 <p class="d-inline-block border rounded-pill py-1 px-4">Therapists</p>
                 <h1>Our {{ specialty.therapist-word }}</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
 
                 {% for person in site.data.team %}
                     {% if person.roles contains "therapist" and person.specialty == specialty.name %}
