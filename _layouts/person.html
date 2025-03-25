@@ -32,7 +32,12 @@ layout: default
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <p class="d-inline-block border rounded-pill py-1 px-4">Team Member</p>
-                <h1 class="mb-4">{{ person.name }}</h1>
+                <h1 class="mb-1">{{ person.name }}</h1>
+
+                <h4 class="mb-4">{{ person.qual }}</h4>
+
+                <p class="mb-4">{{ person.experience }}</p>
+
 
                 {% if person.roles contains "director" %}
                   <p><i class="far fa-check-circle text-primary me-3"></i>{{ person.name }} is a managing director of PNP Wellness Center.</p>
@@ -42,9 +47,8 @@ layout: default
                   <p><i class="far fa-check-circle text-primary me-3"></i>Therapist: {{ person.specialty }}</p>
                 {% endif %}
 
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a>
+                <p class="mb-4">{{ person.description }}</p>
+
             </div>
         </div>
     </div>
