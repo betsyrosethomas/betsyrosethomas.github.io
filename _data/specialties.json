@@ -1,6 +1,7 @@
 [
   {
     "name": "Physiotherapy",
+    "therapist-word": "Physiotherapists",
     "description": [
           "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. ",
           "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
@@ -10,6 +11,7 @@
   },
   {
     "name": "Naturopathy",
+    "therapist-word": "Naturopathic Doctors",
 	"description": [
         "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being,",
         "encompassing therapies like yoga, diet, herbal medicine, and stress management."
@@ -19,6 +21,7 @@
   },
   {
     "name": "Psychology",
+    "therapist-word": "Psychologists",
     "description": [
           "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."
         ],
