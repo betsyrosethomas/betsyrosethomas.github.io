@@ -13,17 +13,17 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Charyil Towers, Muttom, India</small>
+                    <small>{{ site.data.clinic.address-short }}</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Sat : 09.00 AM - 05.00 PM</small>
+                    <small>{{ site.data.clinic.opening-hours }}</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+012 345 6789</small>
+                    <small>{{ site.data.clinic.phone1 }}</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -52,7 +52,7 @@
 				{% for specialty in site.data.specialties %}
                     <a href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html" class="nav-item nav-link">{{ specialty.name }}</a>
 				{% endfor %}
-                
+
                 <a href="{{ site.baseurl }}/about.html" class="nav-item nav-link">About us</a>
 
                 <div class="nav-item dropdown">
@@ -64,6 +64,7 @@
                     </div>
                 </div>
 
+                <!-- 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
@@ -74,6 +75,7 @@
                         <a href="{{ site.baseurl }}/404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
+                 -->
 
             </div>
             <a href="{{ site.baseurl }}/contact.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact us<i class="fa fa-arrow-right ms-3"></i></a>

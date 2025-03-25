@@ -5,8 +5,8 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Muttom, Thodupuzha</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span class="pnp-phone">javascript-required</span></p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{ site.data.clinic.address-short }}</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span class="pnp-phone">{{ site.data.clinic.phone1 }}</span></p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i><span class="pnp-email">javascript-required</span></p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -23,11 +23,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="{{ site.baseurl }}/index.html">Home</a>
+                    <a class="btn btn-link" href="{{ site.baseurl }}/about.html">About Us</a>
+                    <a class="btn btn-link" href="{{ site.baseurl }}/contact.html">Contact Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
 
