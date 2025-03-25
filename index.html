@@ -75,7 +75,7 @@ layout: default
                         </div>
                         <h4 class="mb-3">{{ specialty.name }}</h4>
                         <p class="mb-4">{{ specialty.description }}</p>
-                        <a class="btn" href="{{ specialty.link }}"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        <a class="btn" href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
 				{% endfor %}
