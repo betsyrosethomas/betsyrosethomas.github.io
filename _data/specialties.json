@@ -3,18 +3,18 @@
     "name": "Physiotherapy",
 	"description": "",
   "carousal-img": "car-physio.jpg",
-	"link": "physiotherapy.html"
+	"slug": "physiotherapy"
   },
   {
     "name": "Naturopathy",
 	"description": "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being, encompassing therapies like yoga, diet, herbal medicine, and stress management.",
   "carousal-img": "car-naturo.jpg",
-	"link": "naturopathy.html"
+	"slug": "naturopathy"
   },
   {
     "name": "Psychology",
 	"description": "",
   "carousal-img": "car-psycho.jpg",
-	"link": "psychology.html"
-  },
+	"slug": "psychology"
+  }
 ]
