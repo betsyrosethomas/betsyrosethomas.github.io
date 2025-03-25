@@ -1,20 +1,28 @@
 [
   {
     "name": "Physiotherapy",
-	"description": "",
-  "carousal-img": "car-physio.jpg",
-	"slug": "physiotherapy"
+    "description": [
+          "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. ",
+          "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
+        ],
+    "carousal-img": "car-physio.jpg",
+    "slug": "physiotherapy"
   },
   {
     "name": "Naturopathy",
-	"description": "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being, encompassing therapies like yoga, diet, herbal medicine, and stress management.",
-  "carousal-img": "car-naturo.jpg",
-	"slug": "naturopathy"
+	"description": [
+        "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being,",
+        "encompassing therapies like yoga, diet, herbal medicine, and stress management."
+      ],
+    "carousal-img": "car-naturo.jpg",
+    "slug": "naturopathy"
   },
   {
     "name": "Psychology",
-	"description": "",
-  "carousal-img": "car-psycho.jpg",
-	"slug": "psychology"
+    "description": [
+          "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."
+        ],
+    "carousal-img": "car-psycho.jpg",
+    "slug": "psychology"
   }
 ]
