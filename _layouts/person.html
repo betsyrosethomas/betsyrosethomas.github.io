@@ -1,33 +1,31 @@
 ---
 layout: default
 ---
+
+<!-- page name is from one of the files in team folder, serves as the identifier for person -->
+
 {% assign slug = page.name | replace: '.html', '' %}
 {% assign person = site.data.team | where: "slug", slug | first %}
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="container py-5">
-          <h1 class="display-3 text-white mb-3 animated slideInDown">Meet the Team</h1>
-          <nav aria-label="breadcrumb animated slideInDown">
-              <ol class="breadcrumb text-uppercase mb-0">
-                  <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a class="text-white" href="#">Team</a></li>
-                  <li class="breadcrumb-item text-primary active" aria-current="page">{{ person.name }}</li>
-              </ol>
-          </nav>
-      </div>
-  </div>
-  <!-- Page Header End -->
+
+<!-- Include Page Header -->
+
+{% include sub-page-header.html folder="Our Team" file=person.name %}
 
 
   <!-- About Start -->
   <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-2 wow fadeIn" data-wow-delay="0.1s">
                 <div class="d-flex flex-column">
-                    <img class="img-fluid rounded w-75 align-self-end" src="{{ site.baseurl }}/img/{{ person.photo }}" alt="">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid rounded w-100 align-self-end" src="{{ site.baseurl }}/img/{{ person.photo }}" alt="">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -36,7 +34,7 @@ layout: default
 
                 <h4 class="mb-4">{{ person.qual }}</h4>
 
-                <p class="mb-4">{{ person.experience }}</p>
+                <h5 class="mb-4">{{ person.experience }}</h5>
 
 
                 {% if person.roles contains "director" %}
