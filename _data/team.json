@@ -30,6 +30,16 @@
     "photo": "team-tanooja.jpg"
   },
   {
+    "name": "Jose",
+    "specialty": "Massage Therapy",
+    "roles": ["therapist"],
+    "slug": "jose",
+    "qual": "",
+    "description": "",
+    "experience": "",
+    "photo": "team-jose.jpg"
+  },
+  {
     "name": "Bindu K A",
     "specialty": "Psychology",
     "roles": ["therapist"],
