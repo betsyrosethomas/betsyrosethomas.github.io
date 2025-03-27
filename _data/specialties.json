@@ -1,6 +1,7 @@
 [
   {
     "name": "Physiotherapy",
+    "sub-disciplines":["Physiotherapy"],
     "therapist-word": "Physiotherapists",
     "description": [
           "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. ",
@@ -11,7 +12,8 @@
   },
   {
     "name": "Naturopathy",
-    "therapist-word": "Naturopathic Doctors",
+    "sub-disciplines":["Naturopathy", "Massage Therapy"],
+    "therapist-word": "Naturopathic Therapists",
 	"description": [
         "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being,",
         "encompassing therapies like yoga, diet, herbal medicine, and stress management."
@@ -21,6 +23,7 @@
   },
   {
     "name": "Psychology",
+    "sub-disciplines":["Psychology"],
     "therapist-word": "Psychologists",
     "description": [
           "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."

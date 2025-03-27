@@ -4,7 +4,7 @@
     "specialty": "Naturopathy",
     "roles": ["therapist"],
     "slug": "aswathi",
-    "qual": "BNYS",
+    "qual": ["BNYS"],
     "description": "Naturopathic Physician.",
     "experience": "",
     "photo": "team-aswathi.jpg"
@@ -14,7 +14,7 @@
     "specialty": "Physiotherapy",
     "roles": ["therapist"],
     "slug": "nelson",
-    "qual": "Master of Physiotherapy, Musculoskeletal and Sports",
+    "qual": ["Master of Physiotherapy, Musculoskeletal and Sports"],
     "description": "",
     "experience": "",
     "photo": "team-nelson.jpg"
@@ -24,7 +24,7 @@
     "specialty": "Massage Therapy",
     "roles": ["therapist"],
     "slug": "tanooja",
-    "qual": "",
+    "qual": [""],
     "description": "",
     "experience": "",
     "photo": "team-tanooja.jpg"
@@ -34,7 +34,7 @@
     "specialty": "Massage Therapy",
     "roles": ["therapist"],
     "slug": "jose",
-    "qual": "",
+    "qual": [""],
     "description": "",
     "experience": "",
     "photo": "team-jose.jpg"
@@ -44,7 +44,7 @@
     "specialty": "Psychology",
     "roles": ["therapist"],
     "slug": "bindu",
-    "qual": "B.Sc. Psychology",
+    "qual": ["B.Sc. Psychology"],
     "description": "Psychologist and Psychotherapist, Life Coach and Trauma Healing through EFT.",
     "experience": "",
     "photo": "team-bindu.jpg"
@@ -54,7 +54,7 @@
     "specialty": "Pharmacy",
     "roles": ["director"],
     "slug": "betsy",
-    "qual": "B. Pharm",
+    "qual": [""],
     "description": "",
     "experience": "Retd. Regional Director of Pharmacy Operations, Red River Co-op, Winnipeg, Canada. ",
     "photo": "team-betsy.jpg"
@@ -64,7 +64,7 @@
     "specialty": "Psychology",
     "roles": ["therapist", "director"],
     "slug": "prasad",
-    "qual": "M.S. in Counselling and Psychotherapy",
+    "qual": ["Master of Psychiatric Social Work", "M.S. in Counselling and Psychotherapy"],
     "description": "",
     "experience": "",
     "photo": "team-prasad.jpg"

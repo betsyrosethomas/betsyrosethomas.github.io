@@ -11,7 +11,7 @@ layout: default
 
 <!-- Include Page Header -->
 
-{% include sub-page-header.html folder="Our Team" file=person.name %}
+{% include sub-page-header.html folder="Team" file="Team Member" %}
 
 
   <!-- About Start -->
@@ -32,7 +32,7 @@ layout: default
                 <p class="d-inline-block border rounded-pill py-1 px-4">Team Member</p>
                 <h1 class="mb-1">{{ person.name }}</h1>
 
-                <h4 class="mb-4">{{ person.qual }}</h4>
+                <h4 class="mb-4">{{ person.qual | join: "<br>" }}</h4>
 
                 <h5 class="mb-4">{{ person.experience }}</h5>
 
