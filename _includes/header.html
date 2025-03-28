@@ -36,7 +36,7 @@
     </div>
     <!-- Topbar End -->
 
-
+    {% assign header-slug = page.name | replace: '.html', '' %}
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="{{ site.baseurl }}/index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -47,19 +47,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ site.baseurl }}/index.html" class="nav-item nav-link active">Home</a>
+                <a href="{{ site.baseurl }}/index.html" class="nav-item nav-link {% if header-slug == 'index' %}active{% endif %}">Home</a>
 
 				{% for specialty in site.data.specialties %}
-                    <a href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html" class="nav-item nav-link">{{ specialty.name }}</a>
+                    <a href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html" class="nav-item nav-link {% if header-slug == specialty.slug %}active{% endif %}">{{ specialty.name }}</a>
 				{% endfor %}
 
-                <a href="{{ site.baseurl }}/about.html" class="nav-item nav-link">About us</a>
+                <a href="{{ site.baseurl }}/about.html" class="nav-item nav-link {% if header-slug == 'about' %}active{% endif %}">About us</a>
 
                 <div class="nav-item dropdown">
                     <a href="{{ site.baseurl }}/team.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Team</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         {% for member in site.data.team %}
-                            <a href="{{ site.baseurl }}/team/{{ member.slug }}.html" class="dropdown-item">{{ member.name }}</a>
+                            <a href="{{ site.baseurl }}/team/{{ member.slug }}.html" class="dropdown-item {% if header-slug == member.slug %}active{% endif %}">{{ member.name }}</a>
                         {% endfor %}
                     </div>
                 </div>
