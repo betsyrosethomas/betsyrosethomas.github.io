@@ -6,7 +6,7 @@
         };
       
         function fetchJSONData() {
-          fetch("./data.json")
+          fetch("{{ site.baseurl }}/data.json")
             .then((res) => {
               if (!res.ok) {
                 throw new Error
@@ -31,7 +31,7 @@
         }
       </script>
 
-      
+
     <meta charset="utf-8">
     <title>PNP Wellness Clinic</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
