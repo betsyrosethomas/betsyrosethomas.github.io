@@ -53,8 +53,6 @@
                     <a href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html" class="nav-item nav-link {% if header-slug == specialty.slug %}active{% endif %}">{{ specialty.name }}</a>
 				{% endfor %}
 
-                <a href="{{ site.baseurl }}/about.html" class="nav-item nav-link {% if header-slug == 'about' %}active{% endif %}">About us</a>
-
                 <div class="nav-item dropdown">
                     <a href="{{ site.baseurl }}/team.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Team</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
@@ -64,18 +62,8 @@
                     </div>
                 </div>
 
-                <!-- 
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="{{ site.baseurl }}/feature.html" class="dropdown-item">Feature</a>
-                        <a href="{{ site.baseurl }}/team.html" class="dropdown-item">Our Doctor</a>
-                        <a href="{{ site.baseurl }}/appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="{{ site.baseurl }}/testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="{{ site.baseurl }}/404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                 -->
+                <a href="{{ site.baseurl }}/about.html" class="nav-item nav-link {% if header-slug == 'about' %}active{% endif %}">About us</a>
+                <a href="{{ site.baseurl }}/contact.html" class="nav-item nav-link d-lg-none {% if header-slug == 'contact' %}active{% endif %}">Contact us</a>
 
             </div>
             <a href="{{ site.baseurl }}/contact.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact us<i class="fa fa-arrow-right ms-3"></i></a>
