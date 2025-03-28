@@ -4,10 +4,11 @@
     "phone2": "+91 9539 992 727",
     "address-short": "Charyil Towers, Muttom, India",
     "address-long": [
-            "Charyil Towers",
-            "Opposite Sibigiri Church",
-            "Muttom PO",
-            "Sankarappilly"
+            "Charyil Towers,",
+            "Opposite Sibigiri Church,",
+            "Sankarappilly,",
+            "Muttom"
         ],
-    "opening-hours": "Mon - Sat : 09.00 AM - 05.00 PM"
+    "opening-hours": "Mon - Sat : 09.00 AM - 05.00 PM",
+    "google-map-string": "!1m18!1m12!1m3!1d4674.968578709641!2d76.75313978854442!3d9.836562945637523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07c615cf33137d%3A0x9c32ae39ecbac6d8!2sSt.%20Sebastian&#39;s%20Church%20Sibigiri%2C%20Muttom!5e0!3m2!1sen!2sin!4v1743157221736!5m2!1sen!2sin"
 }
