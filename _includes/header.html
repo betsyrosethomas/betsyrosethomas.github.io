@@ -57,7 +57,7 @@
                     <a href="{{ site.baseurl }}/team.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Team</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
                         {% for member in site.data.team %}
-                            <a href="{{ site.baseurl }}/team/{{ member.slug }}.html" class="dropdown-item {% if header-slug == member.slug %}active{% endif %}">{{ member.name }}</a>
+                            <a href="{{ site.baseurl }}/team/{{ member.slug }}.html" class="dropdown-item {% if header-slug == member.slug %}active{% endif %}">{{ member.name }} - <i>{{ member.specialty }}</i></a>
                         {% endfor %}
                     </div>
                 </div>
