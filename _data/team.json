@@ -17,7 +17,12 @@
     "roles": ["therapist"],
     "slug": "nelson",
     "qual": ["Master of Physiotherapy, Musculoskeletal and Sports"],
-    "description": [""],
+    "description": [
+        "Mr. Nelson Joy is an MPT graduate specializing in musculoskeletal (MSK) and sports physiotherapy, ",
+        "with diverse experience in stroke rehabilitation, pediatrics, sports injuries, orthopedic conditions, and geriatrics. ", 
+        "<br><br>His expertise spans injury management, rehabilitation, and functional recovery across different age groups and conditions. ",
+        "Committed to evidence-based practice, he strives to enhance mobility, independence, and overall well-being for our patients."
+      ],
     "experience": "",
     "photo": "team-nelson.jpg"
   },
@@ -66,7 +71,7 @@
     "specialty": "Psychology",
     "roles": ["therapist", "director"],
     "slug": "prasad",
-    "qual": ["Master of Psychiatric Social Work", "M.S. in Counselling and Psychotherapy"],
+    "qual": ["MSW (Medical and Psychiatry)", "M.S. in Counselling and Psychotherapy"],
     "description": [""],
     "experience": "",
     "photo": "team-prasad.jpg"
