@@ -45,7 +45,7 @@ layout: default
                   <p><i class="far fa-check-circle text-primary me-3"></i>Therapist: {{ person.specialty }}</p>
                 {% endif %}
 
-                <p class="mb-4">{{ person.description }}</p>
+                <p class="mb-4">{{ person.description | join: "" }}</p>
 
             </div>
         </div>

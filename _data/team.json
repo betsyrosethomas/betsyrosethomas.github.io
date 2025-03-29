@@ -4,8 +4,10 @@
     "specialty": "Naturopathy",
     "roles": ["therapist"],
     "slug": "aswathi",
-    "qual": ["BNYS"],
-    "description": "Naturopathic Physician.",
+    "qual": ["BNYS", "Masters in Dietetics and Food Science Management"],
+    "description": ["Holding a masters degree in dietetics and food science management, a bachelors degree in ",
+        "Naturopathy and Yogic Science and being an acupuncture physician, Dr. Aswathi N integrates nutritional science, ",
+        "naturopathic principles and acupuncture techniques to offer personalized holistic healthcare solutions."],
     "experience": "",
     "photo": "team-aswathi.jpg"
   },
@@ -15,7 +17,7 @@
     "roles": ["therapist"],
     "slug": "nelson",
     "qual": ["Master of Physiotherapy, Musculoskeletal and Sports"],
-    "description": "",
+    "description": [""],
     "experience": "",
     "photo": "team-nelson.jpg"
   },
@@ -25,7 +27,7 @@
     "roles": ["therapist"],
     "slug": "tanooja",
     "qual": [""],
-    "description": "",
+    "description": [""],
     "experience": "",
     "photo": "team-tanooja.jpg"
   },
@@ -35,17 +37,17 @@
     "roles": ["therapist"],
     "slug": "jose",
     "qual": [""],
-    "description": "",
+    "description": [""],
     "experience": "",
     "photo": "team-jose.jpg"
   },
   {
-    "name": "Bindu K A",
+    "name": "Sr. Bindu K A",
     "specialty": "Psychology",
     "roles": ["therapist"],
     "slug": "bindu",
-    "qual": ["B.Sc. Psychology"],
-    "description": "Psychologist and Psychotherapist, Life Coach and Trauma Healing through EFT.",
+    "qual": ["M.Sc. Psychology", "PG Diploma in Psychology"],
+    "description": ["Psychologist and Psychotherapist. Life Coach and Trauma Healing through EFT. Specialised in trauma healing and grief therapy."],
     "experience": "",
     "photo": "team-bindu.jpg"
   },
@@ -55,7 +57,7 @@
     "roles": ["director"],
     "slug": "betsy",
     "qual": [""],
-    "description": "",
+    "description": [""],
     "experience": "Retd. Regional Director of Pharmacy Operations, Red River Co-op, Winnipeg, Canada. ",
     "photo": "team-betsy.jpg"
   },
@@ -65,7 +67,7 @@
     "roles": ["therapist", "director"],
     "slug": "prasad",
     "qual": ["Master of Psychiatric Social Work", "M.S. in Counselling and Psychotherapy"],
-    "description": "",
+    "description": [""],
     "experience": "",
     "photo": "team-prasad.jpg"
   }
