@@ -12,7 +12,10 @@ layout: default
 
 {% include sub-page-header.html folder="Specialty" file=specialty.name %}
 
-
+<!-- banner -->
+{% if specialty.banner!= "" %}
+    {% include blue-banner-small.html banner=specialty.banner banner-title=specialty.banner-title %}
+{% endif %}
 
 <!-- Description Start -->
 <div class="container-xxl py-5">
@@ -41,8 +44,6 @@ layout: default
 </div>
 <!-- Description End -->
 
-<!-- Include Page Header -->
-{% include blue-banner-small.html %}
 
 <!-- Show therapists of this specialty -->
 

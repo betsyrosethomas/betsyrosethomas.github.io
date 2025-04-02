@@ -9,6 +9,8 @@
         "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
       ],
     "carousal-img": "car-physio.jpg",
+    "banner": "Our physiotherapist is available to do home visits when required.",
+    "banner-title": "Home visit available!",
     "slug": "physiotherapy"
   },
   {
@@ -21,6 +23,8 @@
         "encompassing therapies like yoga, diet, herbal medicine, and stress management."
       ],
     "carousal-img": "car-naturo.jpg",
+    "banner": "",
+    "banner-title": "",
     "slug": "naturopathy"
   },
   {
@@ -32,6 +36,8 @@
         "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."
       ],
     "carousal-img": "car-psycho.jpg",
+    "banner": "",
+    "banner-title": "",
     "slug": "psychology"
   }
 ]
