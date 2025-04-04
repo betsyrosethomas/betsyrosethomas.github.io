@@ -1,45 +1,14 @@
 <head>
 
-    <script>
-        window.onload = function(){
-            fetchJSONData();
-        };
-      
-        function fetchJSONData() {
-          fetch("{{ site.baseurl }}/data.json")
-            .then((res) => {
-              if (!res.ok) {
-                throw new Error
-                  (`HTTP error! Status: ${res.status}`);
-              }
-              return res.json();
-            })
-            .then((data) => {
-                  processInfo(data.info);
-                })
-            .catch((error) => 
-                console.error("Unable to fetch data:", error));
-        }
-      
-        function processInfo(info){
-          for (var i=0; i < info.length; i++) {
-            var dom_items = document.getElementsByClassName(info[i].class);
-            for (var j=0; j < dom_items.length; j++) {
-              dom_items[j].innerHTML = info[i].value;
-            }
-          }
-        }
-      </script>
-
-
     <meta charset="utf-8">
-    <title>PNP Wellness Clinic</title>
+    <title>PNP Wellness Center</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Physiotherapy, Naturopathy, Psychotherapy, Psychology, Massage Therapy, PNP Wellness Center, Muttom, Thodupuzha" name="keywords">
+    <meta content="Specializing in Physiotherapy, Naturopathy, Psychotherapy, PNP Wellness Center, Muttom, Thodupuzha" name="description">
 
     <!-- Favicon -->
     <link href="{{ site.baseurl }}/img/favicon.ico" rel="icon">
+    <link href="{{ site.baseurl }}/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,4 +29,38 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
+
+    {% include schema.html %}
+
+    <script>
+      window.onload = function(){
+          fetchJSONData();
+      };
+    
+      function fetchJSONData() {
+        fetch("{{ site.baseurl }}/data.json")
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error
+                (`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+          })
+          .then((data) => {
+                processInfo(data.info);
+              })
+          .catch((error) => 
+              console.error("Unable to fetch data:", error));
+      }
+    
+      function processInfo(info){
+        for (var i=0; i < info.length; i++) {
+          var dom_items = document.getElementsByClassName(info[i].class);
+          for (var j=0; j < dom_items.length; j++) {
+            dom_items[j].innerHTML = info[i].value;
+          }
+        }
+      }
+    </script>
+
 </head>
