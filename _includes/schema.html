@@ -1,0 +1,73 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "{{ site.data.clinic.name }}",
+    "description": "A leading wellness center offering Physiotherapy, Naturopathy, Psychotherapy, and Massage Therapy services to help you achieve optimal health.",
+    "url": "{{ site.data.clinic.website }}",
+    "logo": "{{ site.data.clinic.website }}/img/logo.png",
+    "image": "{{ site.data.clinic.website }}/img/clinic-exterior.jpg",
+    "telephone": "{{ site.data.clinic.phone1 }}",
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cheriyil Towers",
+    "addressLocality": "Sankarappilly, Muttom",
+    "addressRegion": "Kerala",
+    "postalCode": "{{ site.data.clinic.pincode }}",
+    "addressCountry": "IN"
+    },
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ site.data.clinic.latitude }}",
+    "longitude": "{{ site.data.clinic.longitude }}"
+    },
+    "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "{{ site.data.clinic.phone1 }}",
+    "contactType": "Customer Service",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Malayalam"]
+    },
+    "openingHoursSpecification": [
+    {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+    }
+    ],
+    "department": [
+    {
+        "@type": "MedicalSpecialty",
+        "name": "Physiotherapy",
+        "description": "Expert physiotherapists providing treatment for mobility, pain relief, and rehabilitation."
+    },
+    {
+        "@type": "MedicalSpecialty",
+        "name": "Naturopathy",
+        "description": "Natural healing therapies including herbal medicine, nutrition, and detox treatments."
+    },
+    {
+        "@type": "MedicalSpecialty",
+        "name": "Psychotherapy",
+        "description": "Professional counseling and mental health support for emotional well-being."
+    },
+    {
+        "@type": "MedicalSpecialty",
+        "name": "Massage Therapy",
+        "description": "Therapeutic massage to supplement Naturopathic treatments."
+    }
+    ],
+
+
+    {% comment %}
+    "sameAs": [
+      "{{ site.data.clinic.facebook }}",
+      "{{ site.data.clinic.instagram }}",
+    ],
+    {% endcomment %}
+    
+
+      "priceRange": "$$"
+    }
+</script>

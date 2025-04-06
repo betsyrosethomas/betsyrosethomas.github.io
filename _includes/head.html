@@ -1,0 +1,66 @@
+<head>
+
+    <meta charset="utf-8">
+    <title>PNP Wellness Center</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Physiotherapy, Naturopathy, Psychotherapy, Psychology, Massage Therapy, PNP Wellness Center, Muttom, Thodupuzha" name="keywords">
+    <meta content="Specializing in Physiotherapy, Naturopathy, Psychotherapy, PNP Wellness Center, Muttom, Thodupuzha" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ site.baseurl }}/img/favicon.ico" rel="icon">
+    <link href="{{ site.baseurl }}/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ site.baseurl }}/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
+
+    {% include schema.html %}
+
+    <script>
+      window.onload = function(){
+          fetchJSONData();
+      };
+    
+      function fetchJSONData() {
+        fetch("{{ site.baseurl }}/data.json")
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error
+                (`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+          })
+          .then((data) => {
+                processInfo(data.info);
+              })
+          .catch((error) => 
+              console.error("Unable to fetch data:", error));
+      }
+    
+      function processInfo(info){
+        for (var i=0; i < info.length; i++) {
+          var dom_items = document.getElementsByClassName(info[i].class);
+          for (var j=0; j < dom_items.length; j++) {
+            dom_items[j].innerHTML = info[i].value;
+          }
+        }
+      }
+    </script>
+
+</head>

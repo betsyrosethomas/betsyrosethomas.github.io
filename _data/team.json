@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Dr. Aswathi N",
+    "specialty": "Naturopathy",
+    "roles": ["therapist"],
+    "slug": "aswathi",
+    "qual": ["BNYS", "Masters in Dietetics and Food Science Management"],
+    "description": ["Holding a masters degree in dietetics and food science management, a bachelors degree in ",
+        "Naturopathy and Yogic Science and being an acupuncture physician, Dr. Aswathi N integrates nutritional science, ",
+        "naturopathic principles and acupuncture techniques to offer personalized holistic healthcare solutions."],
+    "experience": "",
+    "photo": "team-aswathi.jpg"
+  },
+  {
+    "name": "Nelson Joy",
+    "specialty": "Physiotherapy",
+    "roles": ["therapist"],
+    "slug": "nelson",
+    "qual": ["Master of Physiotherapy, Musculoskeletal and Sports"],
+    "description": [
+        "Mr. Nelson Joy is an MPT graduate specializing in musculoskeletal (MSK) and sports physiotherapy, ",
+        "with diverse experience in stroke rehabilitation, pediatrics, sports injuries, orthopedic conditions, and geriatrics. ", 
+        "<br><br>His expertise spans injury management, rehabilitation, and functional recovery across different age groups and conditions. ",
+        "Committed to evidence-based practice, he strives to enhance mobility, independence, and overall well-being for our patients."
+      ],
+    "experience": "",
+    "photo": "team-nelson.jpg"
+  },
+  {
+    "name": "Tanooja",
+    "specialty": "Massage Therapy",
+    "roles": ["therapist"],
+    "slug": "tanooja",
+    "qual": [""],
+    "description": [""],
+    "experience": "",
+    "photo": "team-tanooja.jpg"
+  },
+  {
+    "name": "Jose",
+    "specialty": "Massage Therapy",
+    "roles": ["therapist"],
+    "slug": "jose",
+    "qual": [""],
+    "description": [""],
+    "experience": "",
+    "photo": "team-jose.jpg"
+  },
+  {
+    "name": "Sr. Bindu K A",
+    "specialty": "Psychology",
+    "roles": ["therapist"],
+    "slug": "bindu",
+    "qual": ["M.Sc. Psychology", "PG Diploma in Psychology"],
+    "description": ["Psychologist and Psychotherapist. Life Coach and Trauma Healing through EFT. Specialised in trauma healing and grief therapy."],
+    "experience": "",
+    "photo": "team-bindu.jpg"
+  },
+  {
+    "name": "Betsy Prasad",
+    "specialty": "Pharmacy",
+    "roles": ["director"],
+    "slug": "betsy",
+    "qual": [""],
+    "description": [""],
+    "experience": "Retd. Regional Director of Pharmacy Operations, Red River Co-op, Winnipeg, Canada. ",
+    "photo": "team-betsy.jpg"
+  },
+  {
+    "name": "Prasad Joseph",
+    "specialty": "Psychology",
+    "roles": ["therapist", "director"],
+    "slug": "prasad",
+    "qual": ["MSW (Medical and Psychiatry)", "M.S. in Counselling and Psychotherapy"],
+    "description": [""],
+    "experience": "",
+    "photo": "team-prasad.jpg"
+  }
+]

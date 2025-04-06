@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Physiotherapy",
+    "sub-disciplines":["Physiotherapy"],
+    "therapist-word": "Physiotherapists",
+    "icon": "fa-wheelchair",
+    "description": [
+        "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. ",
+        "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
+      ],
+    "carousal-img": "car-physio.jpg",
+    "banner": "Our physiotherapist is available to do home visits as required.",
+    "banner-title": "Home visit available!",
+    "slug": "physiotherapy"
+  },
+  {
+    "name": "Naturopathy",
+    "sub-disciplines":["Naturopathy", "Massage Therapy"],
+    "therapist-word": "Naturopathic Therapists",
+    "icon": "fa-leaf",
+	  "description": [
+        "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being,",
+        "encompassing therapies like yoga, diet, herbal medicine, and stress management."
+      ],
+    "carousal-img": "car-naturo.jpg",
+    "banner": "",
+    "banner-title": "",
+    "slug": "naturopathy"
+  },
+  {
+    "name": "Psychology",
+    "sub-disciplines":["Psychology"],
+    "therapist-word": "Psychologists",
+    "icon": "fa-brain",
+    "description": [
+        "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."
+      ],
+    "carousal-img": "car-psycho.jpg",
+    "banner": "",
+    "banner-title": "",
+    "slug": "psychology"
+  }
+]

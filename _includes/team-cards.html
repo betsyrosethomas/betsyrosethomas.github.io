@@ -1,0 +1,33 @@
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block border rounded-pill py-1 px-4">{{ include.pre-title }}</p>
+            <h1>{{ include.title }}</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+
+            {% for person in site.data.team %}
+                {% if include.filter_role == "" or person.roles contains include.filter_role %}
+                    {% if include.filter_specialty == "" or include.filter_specialty.sub-disciplines contains person.specialty %}
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="team-item position-relative rounded overflow-hidden">
+                                <div class="overflow-hidden">
+                                    <a href="{{ site.baseurl }}/team/{{ person.slug }}.html"><img class="img-fluid" src="{{ site.baseurl }}/img/{{ person.photo }}" alt=""></a>
+                                </div>
+                                <div class="team-text bg-light text-center p-4">
+                                    <h5>{{ person.name }}</h5>
+                                    <p class="text-primary">{{ person.specialty }}</p>
+                                    <div class="team-social text-center">
+                                        <a class="btn btn-primary rounded-pill py-1 px-4 mt-1" href="{{ site.baseurl }}/team/{{ person.slug }}.html">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

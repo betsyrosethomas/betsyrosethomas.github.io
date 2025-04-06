@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- page name is from one of the files in specialty folder, serves as the identifier for specialty -->
+
+{% assign slug = page.name | replace: '.html', '' %}
+{% assign specialty = site.data.specialties | where: "slug", slug | first %}
+
+
+<!-- Include Page Header -->
+
+{% include sub-page-header.html folder="Specialty" file=specialty.name %}
+
+<!-- banner -->
+{% if specialty.banner!= "" %}
+    {% include blue-banner-small.html banner=specialty.banner banner-title=specialty.banner-title %}
+{% endif %}
+
+<!-- Description Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block border rounded-pill py-1 px-4">Specialty</p>
+            <h1>{{ specialty.name }}</h1>
+        </div>
+        <div class="row g-5">
+
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid rounded w-75 align-self-end" src="{{ site.baseurl }}/img/{{ specialty.carousal-img }}" alt="">
+                </div>
+            </div>
+            
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    {{ content }}
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+<!-- Description End -->
+
+
+<!-- Show therapists of this specialty -->
+
+{% assign therapist_title = "Our " | append: specialty.therapist-word %}
+{% include team-cards.html filter_specialty=specialty filter_role="" pre-title="Therapists" title=therapist_title %}
+
+

@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<!-- page name is from one of the files in team folder, serves as the identifier for person -->
+
+{% assign slug = page.name | replace: '.html', '' %}
+{% assign person = site.data.team | where: "slug", slug | first %}
+
+
+
+<!-- Include Page Header -->
+
+{% include sub-page-header.html folder="Team" file="Team Member" %}
+
+
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid rounded w-100 align-self-end" src="{{ site.baseurl }}/img/{{ person.photo }}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Team Member</p>
+                <h1 class="mb-1">{{ person.name }}</h1>
+
+                <h4 class="mb-4">{{ person.qual | join: "<br>" }}</h4>
+
+                <h5 class="mb-4">{{ person.experience }}</h5>
+
+
+                {% if person.roles contains "director" %}
+                  <p><i class="far fa-check-circle text-primary me-3"></i>{{ person.name }} is a managing director of PNP Wellness Center.</p>
+                {% endif %}
+
+                {% if person.roles contains "therapist" %}
+                  <p><i class="far fa-check-circle text-primary me-3"></i>Therapist: {{ person.specialty }}</p>
+                {% endif %}
+
+                <p class="mb-4">{{ person.description | join: "" }}</p>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+
+{% comment %}
+<!-- Show everyone -->
+{% include team-cards.html filter_specialty="" filter_role="" pre-title="Team" title="Our Team" %}
+{% endcomment %}
