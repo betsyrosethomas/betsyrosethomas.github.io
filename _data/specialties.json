@@ -9,7 +9,7 @@
         "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
       ],
     "carousal-img": "car-physio.jpg",
-    "banner": "Our physiotherapist is available to do home visits as required.",
+    "banner": "Our physiotherapist is available to do home visits.",
     "banner-title": "Home visit available!",
     "slug": "physiotherapy"
   },
@@ -23,8 +23,8 @@
         "encompassing therapies like yoga, diet, herbal medicine, and stress management."
       ],
     "carousal-img": "car-naturo.jpg",
-    "banner": "",
-    "banner-title": "",
+    "banner": "Admissions are open for our Yoga class.",
+    "banner-title": "Join our Yoga Class!",
     "slug": "naturopathy"
   },
   {
