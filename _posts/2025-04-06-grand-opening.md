@@ -9,7 +9,7 @@ categories: updates
 
 PNP Wellness Center will be inaugurated on 2025 April 7th, Monday, 10:30 AM, by **Sri. P. J. Joseph, MLA.** 
 
-Muttom panchayat president **Smt. Mercy Devasya**, Sibigiri church vicar **Rev. Fr. John Palithottam**, and others will be in attendance. 
+Muttom panchayat president **Smt. Mercy Devasia**, Sibigiri church vicar **Rev. Fr. John Palithottam**, and others will be in attendance. 
 
 <figure class="mb-4 text-center">
   <a href="{{ site.baseurl }}/img/posts/opening-advert.jpg" target="_blank">
