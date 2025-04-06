@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+
+    <!-- Include Page sub-header -->
+    {% include sub-page-header.html folder="News" file="Post" %}
+
+    <article>
+
+      <!-- About Start -->
+      <div class="container-fluid py-5">
+        <div class="container-md">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <p class="d-inline-block border rounded-pill py-1 px-4">News</p>
+            <h1>{{ page.title }}</h1>
+            <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
+            <div>
+              {{ content }}
+            </div>
+          </div>
+          <div class="row g-5">
+
+            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+    </article>
+
+    {% include footer.html %}
+  </body>
+</html>
