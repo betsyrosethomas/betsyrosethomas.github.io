@@ -57,6 +57,16 @@
     "photo": "team-bindu.jpg"
   },
   {
+    "name": "Mathews Sunny",
+    "specialty": "IT Consultant",
+    "roles": ["it"],
+    "slug": "mathews",
+    "qual": [""],
+    "description": ["IT consultant."],
+    "experience": "",
+    "photo": "team-mathews.jpg"
+  },
+  {
     "name": "Betsy Prasad",
     "specialty": "Pharmacy",
     "roles": ["director"],
