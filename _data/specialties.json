@@ -8,11 +8,23 @@
         "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. ",
         "It is a dynamic field of healthcare that plays a crucial role in enhancing the quality of life for people of all ages."
       ],
+    "services": [
+        "Orthopaedic Physiotherapy",
+        "Neurological Physiotherapy",
+        "Cardiorespiratory Physiotherapy",
+        "Sports Physiotherapy",
+        "Paediatric Physiotherapy",
+        "Geriatric Physiotherapy",
+        "Pre-Operative Physiotherapy",
+        "Post-Surgical Physiotherapy"
+      ],
     "carousal-img": "car-physio.jpg",
     "banner": "Our physiotherapist is available to do home visits.",
     "banner-title": "Home visit available!",
     "slug": "physiotherapy"
   },
+
+
   {
     "name": "Naturopathy",
     "sub-disciplines":["Naturopathy", "Massage Therapy"],
@@ -22,11 +34,23 @@
         "Naturopathy focuses on natural remedies and holistic approaches to promote healing and well-being,",
         "encompassing therapies like yoga, diet, herbal medicine, and stress management."
       ],
+    "services": [
+        "Yoga and Meditation",
+        "Weight Management",
+        "Pain Management",
+        "Lifestyle disease management (BP, Cholesterol, Osteo Arthritis, Type 2 Diabetes)",
+        "Stress Management",
+        "Hydrotherapy",
+        "Mud Therapy",
+        "Steam Bath"
+      ],
     "carousal-img": "car-naturo.jpg",
     "banner": "Admissions are open for our Yoga class.",
     "banner-title": "Join our Yoga Class!",
     "slug": "naturopathy"
   },
+
+
   {
     "name": "Psychology",
     "sub-disciplines":["Psychology"],
@@ -34,6 +58,15 @@
     "icon": "fa-brain",
     "description": [
         "Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist."
+      ],
+    "services": [
+        "Family Counselling",
+        "Students Counselling",
+        "Marital and Pre-marital Counselling",
+        "Sex Therapy",
+        "Psychological Education",
+        "Anxiety, Depression",
+        "Specialized in Trauma Healing & Grief Therapy through Emotional Freedom Technique"
       ],
     "carousal-img": "car-psycho.jpg",
     "banner": "",

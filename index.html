@@ -93,7 +93,7 @@ layout: default
                             <i class="fa {{ specialty.icon }} text-primary fs-4"></i>
                         </div>
                         <h4 class="mb-3">{{ specialty.name }}</h4>
-                        <p class="mb-4">{{ specialty.description }}</p>
+                        <p class="mb-4"><b>{{ specialty.services | join: "<br>" }}</b></p>
                         <a class="btn" href="{{ site.baseurl }}/specialty/{{ specialty.slug }}.html"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                     </div>
                 </div>
