@@ -1,3 +1,27 @@
+/************ Custom **************/
+
+
+
+/*** Post list blue ***/
+.post-item {
+    transition: .5s;
+}
+
+.post-item:hover {
+    margin-top: -3px;
+    /*box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08);*/
+    /*box-shadow: 0 0 20px 5px rgba(0,0,0,0.5);*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.post-item a {
+    color: #ffffff !important; /* or #f8f9fa or any light shade */
+}
+
+.post-item a:hover {
+    color: #aaa8ff !important; /* or #f8f9fa or any light shade */
+}
+
 /********** Template CSS **********/
 
 :root {
