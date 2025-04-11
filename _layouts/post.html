@@ -18,19 +18,19 @@
           <div class="row g-5">
 
             <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item bg-light rounded p-3">
+              <div class="post-item bg-primary rounded p-3">
 
                   {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
                   {% for year in posts_by_year %}
-                    <h5>{{ year.name }}</h5>
+                    <h5 class="text-white">{{ year.name }}</h5>
                   
                     {% assign posts_by_month = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
                     {% for month in posts_by_month %}
-                      <h6 class="ms-2">{{ month.name }}</h6>
+                      <h6 class="ms-2 text-white">{{ month.name }}</h6>
 
                         {% for post in month.items %}
-                          <p class="ms-4">{{ post.date | date: "%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></p>
+                          <p class="ms-4 text-white">{{ post.date | date: "%d" }} | <a href="{{ post.url }}">{{ post.title }}</a></p>
                         {% endfor %}
 
                     {% endfor %}
@@ -40,8 +40,7 @@
               </div>
             </div>
 
-            <div class="col-lg-8 col-md-8 order-first order-md-last text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-              <p class="d-inline-block border rounded-pill py-1 px-4">News</p>
+            <div class="col-lg-8 col-md-8 order-first order-md-last text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" >
               <h1>{{ page.title }}</h1>
               <p><em>posted on {{ page.date | date: "%B %d, %Y" }}</em></p>
               <div>
