@@ -12,6 +12,8 @@ layout: default
 
 {% include sub-page-header.html folder="Specialty" file=specialty.name %}
 
+<main>
+
 <!-- banner -->
 {% if specialty.banner-title != "" %}
     {% include blue-banner-small.html banner=specialty.banner banner-title=specialty.banner-title %}
@@ -51,4 +53,4 @@ layout: default
 {% assign therapist_title = "Our " | append: specialty.therapist-word %}
 {% include team-cards.html filter_specialty=specialty filter_role="" pre-title="Therapists" title=therapist_title %}
 
-
+</main>
