@@ -14,7 +14,7 @@
                             {% for post in site.posts limit:5  %}
                             <li>
                                 <p class="text-white mb-2 pb-1">
-                                    <a href="{{ post.url | relative_url }}" class="text-white">{{ post.title }}</a> ({{ post.date | date: "%d/%m/%Y" }})
+                                    <a href="{{ post.url | relative_url }}" class="text-white"><b>{{ post.title }}</b></a> ({{ post.date | date: "%d/%m/%Y" }})
                                 </p>
                             </li>
                             {% endfor %}
