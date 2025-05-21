@@ -47,16 +47,6 @@
     "photo": "team-jose.jpg"
   },
   {
-    "name": "Sr. Bindu K A",
-    "specialty": "Psychology",
-    "roles": ["therapist"],
-    "slug": "bindu",
-    "qual": ["M.Sc. Psychology", "PG Diploma in Psychology"],
-    "description": ["Psychologist and Psychotherapist. Life Coach and Trauma Healing through EFT. Specialised in trauma healing and grief therapy."],
-    "experience": "",
-    "photo": "team-bindu.jpg"
-  },
-  {
     "name": "Mathews Sunny",
     "specialty": "IT Consultant",
     "roles": ["it"],
