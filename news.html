@@ -23,7 +23,7 @@ title: "News and Updates"
             {% for post in site.posts %}
 
               <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-              <p>posted on {{ post.date | date: "%B %d, %Y" }}</p>
+              <p>posted {{ post.date | date: "%B %d, %Y" }}</p>
 
             {% endfor %}
 

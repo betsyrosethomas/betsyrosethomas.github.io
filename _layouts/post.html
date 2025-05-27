@@ -40,10 +40,10 @@
               </div>
             </div>
 
-            <div class="col-lg-8 col-md-8 order-first order-md-last text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="col-lg-8 col-md-8 order-first order-md-last text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" >
               <h1>{{ page.title }}</h1>
-              <p><em>posted on {{ page.date | date: "%B %d, %Y" }}</em></p>
-              <div>
+              <p><em>posted {{ page.date | date: "%B %d, %Y" }}</em></p>
+              <div class="">
                 {{ content }}
               </div>
             </div>
